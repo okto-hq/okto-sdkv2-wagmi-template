@@ -1,6 +1,7 @@
 'use client'
 
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
+import { CounterContract } from './components/CounterContract'
 
 function App() {
   const account = useAccount()
@@ -40,6 +41,11 @@ function App() {
         ))}
         <div>{status}</div>
         <div>{error?.message}</div>
+      </div>
+
+      <div>
+        <h2>Counter Contract</h2>
+        <CounterContract />
       </div>
     </>
   )
