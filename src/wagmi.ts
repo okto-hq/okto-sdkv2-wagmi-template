@@ -1,10 +1,10 @@
 import { okto } from '@okto_web3/wagmi-adapter';
 import { cookieStorage, createConfig, createStorage, http } from 'wagmi';
-import { mainnet, optimism, polygon } from 'wagmi/chains';
+import { mainnet, optimism, polygon, baseSepolia } from 'wagmi/chains';
  
 export function getConfig() {
   return createConfig({
-    chains: [polygon],
+    chains: [baseSepolia],
     connectors: [
       okto({
         environment: 'sandbox',
@@ -17,7 +17,7 @@ export function getConfig() {
     }),
     ssr: true,
     transports: {
-      [polygon.id]: http(),
+      [baseSepolia.id]: http(),
     },
   });
 }
