@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@okto_web3/wagmi-adapter':
-        specifier: ^0.2.1
-        version: 0.2.1(@tanstack/query-core@5.45.0)(@types/react@18.3.18)(bufferutil@4.0.9)(encoding@0.1.13)(react@18.3.1)(supports-color@9.4.0)(typescript@5.8.2)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(viem@2.23.6(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2))(zod@3.24.2)
+        specifier: ^0.2.2
+        version: 0.2.2(@tanstack/query-core@5.45.0)(@types/react@18.3.18)(bufferutil@4.0.9)(encoding@0.1.13)(react@18.3.1)(supports-color@9.4.0)(typescript@5.8.2)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(viem@2.23.6(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2))(zod@3.24.2)
       '@tanstack/react-query':
         specifier: 5.45.1
         version: 5.45.1(react@18.3.1)
@@ -491,8 +491,8 @@ packages:
   '@okto_web3/core-js-sdk@0.2.1':
     resolution: {integrity: sha512-GIAuc7zUyB11ZWjsu4fze5GrHfcx38ZZrQZ6+vrr99eMq2WV6uhFln8zsE7sZC9der7QVg21Ar3JtYSFMYIubQ==}
 
-  '@okto_web3/wagmi-adapter@0.2.1':
-    resolution: {integrity: sha512-WiIpVqrzSwH57ZT3D7l1IGQCzS6LrlHbivLynPqGcbr8P4WGJdOMX6Ba7c3GjLLWNC/grqe5jq8xrfMF5WYXHQ==}
+  '@okto_web3/wagmi-adapter@0.2.2':
+    resolution: {integrity: sha512-PJ2b0uDiF/GPdjYFpFdBxshpW0s4VqcQ6k/VxyjyAeFxGnYMKX65bIUTGr13Hvwou7DUQaAOwgg3nZwoifTzKA==}
     peerDependencies:
       viem: 2.x
 
@@ -2051,6 +2051,14 @@ packages:
       typescript:
         optional: true
 
+  viem@2.23.7:
+    resolution: {integrity: sha512-Gbyz0uE3biWDPxECrEyzILWPsnIgDREgfRMuLSWHSSnM6ktefSC/lqQNImnxESdDEixa8/6EWXjmf2H6L9VV0A==}
+    peerDependencies:
+      typescript: '>=5.0.4'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   wagmi@2.14.12:
     resolution: {integrity: sha512-HSX7CkwF7YWecV5EqcOQrHUSGqZ+f8GJ8FWRYktVcxitfaAd0YofwfJNJB+zEsV17hV6uZ5Tu1nP32tgz+1eTQ==}
     peerDependencies:
@@ -2715,7 +2723,7 @@ snapshots:
       axios: 1.8.1
       axios-retry: 4.5.0(axios@1.8.1)
       uuid: 11.1.0
-      viem: 2.23.6(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2)
+      viem: 2.23.7(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2)
       zod: 3.24.2
     transitivePeerDependencies:
       - bufferutil
@@ -2723,7 +2731,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@okto_web3/wagmi-adapter@0.2.1(@tanstack/query-core@5.45.0)(@types/react@18.3.18)(bufferutil@4.0.9)(encoding@0.1.13)(react@18.3.1)(supports-color@9.4.0)(typescript@5.8.2)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(viem@2.23.6(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2))(zod@3.24.2)':
+  '@okto_web3/wagmi-adapter@0.2.2(@tanstack/query-core@5.45.0)(@types/react@18.3.18)(bufferutil@4.0.9)(encoding@0.1.13)(react@18.3.1)(supports-color@9.4.0)(typescript@5.8.2)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(viem@2.23.6(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2))(zod@3.24.2)':
     dependencies:
       '@changesets/cli': 2.28.1
       '@noble/ciphers': 1.2.1
@@ -4587,6 +4595,23 @@ snapshots:
       react: 18.3.1
 
   viem@2.23.6(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2):
+    dependencies:
+      '@noble/curves': 1.8.1
+      '@noble/hashes': 1.7.1
+      '@scure/bip32': 1.6.2
+      '@scure/bip39': 1.5.4
+      abitype: 1.0.8(typescript@5.8.2)(zod@3.24.2)
+      isows: 1.0.6(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+      ox: 0.6.7(typescript@5.8.2)(zod@3.24.2)
+      ws: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+    optionalDependencies:
+      typescript: 5.8.2
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+      - zod
+
+  viem@2.23.7(bufferutil@4.0.9)(typescript@5.8.2)(utf-8-validate@5.0.10)(zod@3.24.2):
     dependencies:
       '@noble/curves': 1.8.1
       '@noble/hashes': 1.7.1

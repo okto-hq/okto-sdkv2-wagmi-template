@@ -10,6 +10,7 @@ export function getConfig() {
         environment: 'sandbox',
         clientPrivateKey: process.env.NEXT_PUBLIC_CLIENT_PRIVATE_KEY as `0x${string}`,
         clientSWA: process.env.NEXT_PUBLIC_CLIENT_SWA as `0x${string}`,
+        googleClientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID as string,
       }),
     ],
     storage: createStorage({
