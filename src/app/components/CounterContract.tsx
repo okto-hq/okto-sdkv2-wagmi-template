@@ -127,7 +127,7 @@ export function CounterContract() {
       </div>
       
       {/* Current value display */}
-      <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg text-center">
+      <div className="mb-8 p-6 gradient-bg rounded-lg text-center">
         <div className="text-lg font-medium mb-2">Current Counter Value</div>
         {readLoading ? (
           <div className="animate-pulse h-16 bg-gray-200 dark:bg-gray-700 rounded-lg w-32 mx-auto"></div>
@@ -229,31 +229,6 @@ export function CounterContract() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
             </svg>
             {isPending ? 'Processing...' : 'Decrement (-1)'}
-          </button>
-        </div>
-      </div>
-      
-      {/* Set value form */}
-      <div className="p-5 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-        <h3 className="text-lg font-medium mb-3">Set Custom Value</h3>
-        <div className="flex flex-col sm:flex-row gap-3">
-          <input
-            type="number"
-            value={newValue}
-            onChange={(e) => setNewValue(e.target.value)}
-            placeholder="Enter new value"
-            className="input flex-1"
-          />
-          
-          <button
-            onClick={handleSetNumber}
-            disabled={isPending || !newValue}
-            className="button button-success sm:w-auto"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            {isPending ? 'Processing...' : 'Set Value'}
           </button>
         </div>
       </div>
