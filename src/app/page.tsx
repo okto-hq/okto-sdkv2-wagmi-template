@@ -2,6 +2,7 @@
 
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 import { CounterContract } from './components/CounterContract'
+import { PortfolioBalance } from './components/PortfolioBalance'
 
 function App() {
   const account = useAccount()
@@ -74,7 +75,10 @@ function App() {
       </div>
       
       {account.status === 'connected' ? (
-        <CounterContract />
+        <>
+          <PortfolioBalance />
+          <CounterContract />
+        </>
       ) : (
         <div className="card text-center p-8">
           <div className="text-6xl mb-4">👆</div>
